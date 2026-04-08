@@ -90,13 +90,13 @@
   }
 }
 
-/* Glow Effect */
+/* Glow Effect - DISABLED (no pulsing) */
 @keyframes glowPulse {
   0%, 100% {
     box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
   }
 }
 
