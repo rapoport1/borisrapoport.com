@@ -1,0 +1,309 @@
+/* Quantum Ascent Responsive Design */
+
+/* Mobile-First Base Styles Already Defined */
+
+/* ========== Tablet (768px+) ========== */
+@media (min-width: 768px) {
+  .nav-menu {
+    gap: var(--spacing-lg);
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* ========== Desktop (1024px+) ========== */
+@media (min-width: 1024px) {
+  :root {
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 3.5rem;
+    --spacing-2xl: 5rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .nav-container {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr 0.9fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quick-nav-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== Large Desktop (1400px+) ========== */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+  }
+}
+
+/* ========== Extra Small (< 480px) ========== */
+@media (max-width: 479px) {
+  :root {
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .nav-menu {
+    gap: var(--spacing-md);
+    font-size: 0.85rem;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-accent {
+    display: none;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .quick-nav-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-form {
+    padding: var(--spacing-lg);
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: var(--spacing-md);
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-status {
+    align-self: flex-start;
+  }
+}
+
+/* ========== Touch Device Adjustments ========== */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+
+  .glass-card {
+    padding: var(--spacing-lg);
+  }
+
+  .nav-link {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 0.35rem;
+  }
+
+  /* Remove hover transforms on touch devices, use active instead */
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .glass-card:active {
+    background: var(--color-glass-hover);
+  }
+}
+
+/* ========== Print Styles ========== */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .nebula-bg,
+  .main-nav,
+  .main-footer {
+    display: none;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .glass-card {
+    background: white;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+/* ========== Landscape Mobile ========== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-menu {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========== High Contrast Mode ========== */
+@media (prefers-contrast: more) {
+  :root {
+    --color-text-light: #ffffff;
+    --color-text-muted: #e0e0e0;
+  }
+
+  .glass-card {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* ========== Light Color Scheme (if user prefers) ========== */
+@media (prefers-color-scheme: light) {
+  /* Keep dark theme as default for Quantum Ascent */
+  /* This is optional — uncomment if light theme support is added */
+}
+
+/* ========== Reduced Data ========== */
+@media (prefers-reduced-data: reduce) {
+  .nebula,
+  .starfield {
+    animation: none;
+    background: var(--color-space-secondary);
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    transition: none;
+  }
+
+  .glass-card {
+    transition: none;
+  }
+}
+
+/* ========== One Column Grid Fix ========== */
+@media (max-width: 640px) {
+  .projects-grid,
+  .quick-nav-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========== Aspect Ratio Fixes ========== */
+@media (aspect-ratio: 1 / 1) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-accent {
+    display: none;
+  }
+}
