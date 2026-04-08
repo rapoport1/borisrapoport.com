@@ -14,11 +14,11 @@ jobs:
         with:
           hugo-version: latest
       - run: hugo
-      - name: Deploy
-        run: |
-          cd public
+      - run: |
+          cd /home/runner/work/borisrapoport.com/borisrapoport.com
+          cp -r public/* .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add -A
           git commit -m "Deploy site" || true
           git push origin master
