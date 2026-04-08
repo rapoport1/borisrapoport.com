@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Boris Rapoport — Automation &amp; QA Leadership</title>
-    <link>https://rapoport1.github.io/borisrapoport.com/projects/</link>
+    <link>https://borisrapoport.com/projects/</link>
     <description>Recent content in Projects on Boris Rapoport — Automation &amp; QA Leadership</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rapoport1.github.io/borisrapoport.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://borisrapoport.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WeSuite Test Automation Framework</title>
-      <link>https://rapoport1.github.io/borisrapoport.com/projects/wesuite-automation/</link>
+      <link>https://borisrapoport.com/projects/wesuite-automation/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://rapoport1.github.io/borisrapoport.com/projects/wesuite-automation/</guid>
+      <guid>https://borisrapoport.com/projects/wesuite-automation/</guid>
       <description>WeSuite Automation Framework Designed and implemented a comprehensive end-to-end testing infrastructure for WeSuite&amp;rsquo;s document creation and automation platform. The framework enables rapid development cycles with confidence through continuous integration.&#xA;Key Features Headless browser testing with Cypress for reliable, maintainable E2E tests Containerized environments using Docker for consistency across development and CI/CD GitHub Actions pipeline for automatic test runs on every commit Test parallelization reducing feedback loop from 20+ minutes to &amp;lt;5 minutes Visual regression testing for UI consistency across releases Impact Reduced regression testing time by 80%, caught critical bugs before production, and enabled the team to iterate faster without sacrificing stability.</description>
     </item>
     <item>
       <title>Smart Test Data Generator</title>
-      <link>https://rapoport1.github.io/borisrapoport.com/projects/test-data-generator/</link>
+      <link>https://borisrapoport.com/projects/test-data-generator/</link>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://rapoport1.github.io/borisrapoport.com/projects/test-data-generator/</guid>
+      <guid>https://borisrapoport.com/projects/test-data-generator/</guid>
       <description>Smart Test Data Generator A Python-based test data generator that creates realistic, contextually consistent test datasets for document generation and form validation testing.&#xA;Problem Solved Manual test data creation is tedious, inconsistent, and error-prone. This tool generates production-realistic data in seconds, enabling comprehensive test coverage without the tedium.&#xA;Key Features Contextual generation — Addresses match postal codes, phone numbers follow country conventions Bulk export — Generate hundreds of test cases in JSON, CSV, or SQL formats Reproducible seeds — Same seed produces identical datasets for deterministic testing Custom templates — Define your own data schemas and generation rules Relationship mapping — Maintains referential integrity across generated records Usage python generate.</description>
     </item>
     <item>
       <title>Scrum Automation Toolkit</title>
-      <link>https://rapoport1.github.io/borisrapoport.com/projects/scrum-automation/</link>
+      <link>https://borisrapoport.com/projects/scrum-automation/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://rapoport1.github.io/borisrapoport.com/projects/scrum-automation/</guid>
+      <guid>https://borisrapoport.com/projects/scrum-automation/</guid>
       <description>Scrum Automation Toolkit A collection of Python utilities and shell scripts designed to streamline common Scrum Master tasks and eliminate manual, repetitive work.&#xA;Components Sprint Report Generator — Automated creation of comprehensive sprint retrospectives with burndown data Jira Velocity Calculator — Analyzes historical sprint data to predict capacity and identify trends Backlog Grooming Script — Bulk operations for story estimation, tagging, and organization Release Notes Generator — Pulls closed issues and generates formatted release notes Stakeholder Notification System — Automated alerts for sprint starts, completions, and blockers Impact Reduced sprint administrative overhead by 3+ hours per sprint, allowing the team to focus on delivery instead of ceremony logistics.</description>
     </item>
     <item>
       <title>Planetary Nebulae Spectral Analysis</title>
-      <link>https://rapoport1.github.io/borisrapoport.com/projects/planetary-nebulae-analysis/</link>
+      <link>https://borisrapoport.com/projects/planetary-nebulae-analysis/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://rapoport1.github.io/borisrapoport.com/projects/planetary-nebulae-analysis/</guid>
+      <guid>https://borisrapoport.com/projects/planetary-nebulae-analysis/</guid>
       <description>Planetary Nebulae Spectral Analysis An undergraduate physics research project analyzing emission line spectra from planetary nebulae to extract physical properties and elemental composition.&#xA;Research Objectives Measure emission line wavelengths and intensities from Hubble Space Telescope spectroscopic data Calculate electron temperature and density from forbidden line ratios Determine chemical abundance patterns relative to solar values Map velocity fields across nebular structures Methodology Image processing and calibration using Python and NumPy Spectral line fitting using Gaussian deconvolution Physical modeling based on photoionization equilibrium Statistical analysis of measurement uncertainties Outcomes This project is where my passion for understanding how systems work was born.</description>
     </item>
   </channel>
