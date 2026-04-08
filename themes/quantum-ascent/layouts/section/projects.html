@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="projects-section">
+  <div class="container">
+    <h1 class="section-title">Projects</h1>
+    <p class="section-subtitle">Automation, QA, and tools that push boundaries</p>
+
+    <div class="projects-grid">
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <h3 class="project-title">{{ .Title }}</h3>
+          {{ if .Params.status }}
+          <span class="project-status {{ .Params.status | lower }}">{{ .Params.status }}</span>
+          {{ end }}
+        </div>
+
+        <p class="project-description">{{ .Params.description }}</p>
+
+        {{ if .Params.tech }}
+        <div class="project-tech">
+          {{ range .Params.tech }}
+          <span class="tech-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="project-links">
+          {{ if .Params.github }}
+          <a href="{{ .Params.github }}" class="project-link" target="_blank" rel="noopener noreferrer">
+            GitHub →
+          </a>
+          {{ end }}
+          {{ if .Params.live }}
+          <a href="{{ .Params.live }}" class="project-link" target="_blank" rel="noopener noreferrer">
+            Live Demo →
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="coming-soon">
+      <h2>Coming Soon</h2>
+      <p>AI-powered tools and automation frameworks in development</p>
+    </div>
+  </div>
+</section>
+{{ end }}

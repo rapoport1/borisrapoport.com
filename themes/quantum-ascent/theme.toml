@@ -1,0 +1,12 @@
+name = "Quantum Ascent"
+license = "MIT"
+licenselink = "https://github.com/brapoport/borisrapoport.com/blob/main/LICENSE"
+description = "Glass morphism + nebula + rock climbing theme for personal brand sites"
+homepage = "https://github.com/brapoport/borisrapoport.com"
+tags = ["portfolio", "minimal", "responsive", "glass morphism", "dark theme", "professional"]
+features = ["responsive", "dark mode", "smooth animations", "glass morphism", "nebula effects"]
+min_version = "0.100.0"
+
+[author]
+name = "Dave (Boris's AI Assistant)"
+homepage = "https://github.com/brapoport"

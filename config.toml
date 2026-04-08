@@ -1,0 +1,73 @@
+baseURL = "https://borisrapoport.com/"
+languageCode = "en-us"
+title = "Boris Rapoport — Automation & QA Leadership"
+theme = "quantum-ascent"
+publishDir = "public"
+outputs.home = ["HTML", "JSON"]
+
+# Content
+paginate = 12
+summaryLength = 70
+pluralizeListTitles = false
+
+# Markup & Performance
+[markup]
+[markup.goldmark]
+hardWraps = true
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Boris Rapoport"
+description = "Lead Scrum Master at WeSuite LLC. Physics + Astronomy background. Automation, QA, and leadership."
+email = "contact@borisrapoport.com" # Contact form endpoint (public-facing)
+contact_admin_email = "admin@borisrapoport.com" # For form filtering/forwarding (configure after setup)
+linkedin = "https://www.linkedin.com/in/rapoporb1/"
+github = "https://github.com/brapoport"
+
+# Site metadata
+year = 2026
+company = "WeSuite LLC"
+location = "Brooklyn, NY"
+
+# Design tokens (Quantum Ascent)
+[params.design]
+color_primary_space = "#0a0e27"
+color_nebula_purple = "#7c3aed"
+color_nebula_blue = "#3b82f6"
+color_nebula_pink = "#ec4899"
+color_accent_orange = "#f97316"
+color_accent_rust = "#b45309"
+color_text_light = "#f8fafc"
+color_glass = "rgba(255, 255, 255, 0.1)"
+
+# Analytics & Tracking (DISABLED - privacy-first)
+[params]
+analytics = false
+gtag = ""
+
+# Security Headers (CSP configured in deployment)
+[params.security]
+csp_enabled = true
+noindex = false
+
+# Menu
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 30
+
+[[menu.main]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/rapoporb1/"
+weight = 40
