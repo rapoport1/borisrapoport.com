@@ -4,24 +4,24 @@ description: Boris Rapoport — From Physics to Automation Leadership
 draft: false
 ---
 
-## About Me
+## The Climb
 
-I'm Boris Rapoport, a **Lead Scrum Master at WeSuite LLC** with a unique background bridging the cosmos and the craft. My journey began with a deep dive into the universe—a BS in Physics and BA in Astronomy—where I spent my time analyzing planetary nebulae spectra, chasing the light from ancient stars. That curiosity about how systems work, how patterns emerge, and how to measure what matters has shaped everything I do.
+Rock climbing has been part of my life since high school, working at The Cliffs at Valhalla before moving to Movement Climbing's Brooklyn location. It taught me something most people overlook: precision, deliberation, and knowing when to trust your anchors. Later, I'd find the same mindset applies to building reliable systems.
 
-Over the past 4+ years, I've translated that scientific precision into **automation and QA leadership**. I've led teams through Scrum frameworks, built testing infrastructure from the ground up, and championed automation as a force multiplier. My toolkit includes Jira workflow design, SQL query optimization, Cypress automation frameworks, and the soft skill of helping teams move faster without burning out.
+I studied Astronomy and Physics at SUNY New Paltz, where I spent time at the observatory taking long-exposure spectral images of planetary nebulae—breaking down light itself to understand what elements made up distant stars. That curiosity about how systems work, how patterns emerge from chaos, how to measure what matters—that hasn't left me.
 
-## Why Both Space and Climbing?
+These days, I explore the night sky from Charlottesville with my Celestron telescope and climb at the local gyms, but the same person who studied starlight in the observatory is still asking: *How does this work? How do we know?*
 
-There's a thread that connects my passions. **Physics taught me to observe.** The nebula project taught me that understanding the universe means finding patterns in chaos, breaking down complexity into measurable components. **QA automation taught me to verify.** Climbing taught me something just as important: **resilience, precision, and knowing when to trust your anchor.**
+## Building Reliable Systems
 
-In testing, we're climbers of a different kind. We're searching for faults before they become failures, building safety systems for code that moves fast. We're precise because the stakes matter. We're relentless because every edge case matters.
+At WeSuite LLC, I started in support and was promoted to QA Analyst after six months. From there, I moved to Head of QA, where I rebuilt the department around modern testing practices and solid documentation. Test automation for WinForms and web applications, SQL query troubleshooting, the day-to-day of ensuring software actually works—this is where the precision matters most.
 
-## Now
+I'm now certified as both an Advanced Certified Scrum Master and Certified Scrum Product Owner. I facilitate our agile ceremonies, guide process improvement, and help our development team move faster without burning out. The same intentionality I learned rock climbing applies here: good systems, clear communication, and knowing when to hold the line.
 
-I'm focused on **scaling automation and automation practice** within WeSuite and beyond. Helping teams embrace test-driven development, building frameworks that grow with you, and proving that QA leadership is product leadership.
+My toolkit includes SQL, IIS troubleshooting, test automation, process engineering, and recently, tools like OpenClaw, Linear, Devin AI, and Home Assistant for automating the systems I build. But the fundamentals stay the same: measure carefully, iterate deliberately, trust the process.
 
-When I'm not building better tests or leading sprints, you'll find me rock climbing in Brooklyn's gyms or reading about emerging technologies in automation and AI.
+## Outside of Work
 
----
+I cook seriously—the same precision and planning as testing goes into a good meal. Hiking in Virginia and the surrounding regions keeps me grounded. And I'm always looking for the next climb, whether it's a rock gym or a mountain trail.
 
-**Let's connect.** If you're building something that matters, pushing automation forward, or just want to talk physics, climbing, or testing—[reach out](/contact/).
+I speak English and Russian, and I'm curious about how systems—whether they're technical, organizational, or astronomical—work. That hasn't changed since the observatory.
