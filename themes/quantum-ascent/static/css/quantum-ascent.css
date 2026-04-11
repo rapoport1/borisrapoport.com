@@ -173,7 +173,15 @@ main.main-content {
 }
 
 .logo-icon {
-  font-size: 1.8rem;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.3));
+  transition: filter var(--transition-fast);
+}
+
+.nav-logo:hover .logo-icon {
+  filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.6));
 }
 
 .nav-menu {
