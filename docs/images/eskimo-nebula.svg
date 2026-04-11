@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="center-core" cx="50%" cy="50%" r="15%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff9500;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="nebula-main" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#ffa500;stop-opacity:0.6" />
+      <stop offset="30%" style="stop-color:#ff8c00;stop-opacity:0.4" />
+      <stop offset="60%" style="stop-color:#ff6347;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="outer-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep space background -->
+  <rect width="1200" height="800" fill="#0a0e27"/>
+  
+  <!-- Distant stars -->
+  <circle cx="100" cy="100" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="250" cy="150" r="0.8" fill="#ffffff" opacity="0.4"/>
+  <circle cx="400" cy="200" r="1.2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="550" cy="80" r="0.9" fill="#ffffff" opacity="0.6"/>
+  <circle cx="700" cy="120" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="850" cy="250" r="0.7" fill="#ffffff" opacity="0.4"/>
+  <circle cx="1050" cy="150" r="1.1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="200" cy="700" r="0.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="900" cy="700" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="1100" cy="600" r="0.9" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Outer glow/halo -->
+  <circle cx="600" cy="400" r="280" fill="url(#outer-glow)" opacity="0.8"/>
+
+  <!-- Main nebula structure (Eskimo face shape) -->
+  <ellipse cx="600" cy="400" rx="200" ry="220" fill="url(#nebula-main)" opacity="0.9"/>
+
+  <!-- Central region with bright core -->
+  <circle cx="600" cy="400" r="120" fill="url(#center-core)" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- Left eye region -->
+  <ellipse cx="520" cy="350" rx="50" ry="60" fill="#ff9500" opacity="0.5"/>
+  <ellipse cx="520" cy="350" rx="30" ry="35" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- Right eye region -->
+  <ellipse cx="680" cy="350" rx="50" ry="60" fill="#ff9500" opacity="0.5"/>
+  <ellipse cx="680" cy="350" rx="30" ry="35" fill="#ffd700" opacity="0.6"/>
+
+  <!-- Mouth region darker area -->
+  <ellipse cx="600" cy="480" rx="80" ry="40" fill="#ff6347" opacity="0.4"/>
+
+  <!-- Surrounding nebula wisps -->
+  <ellipse cx="450" cy="350" rx="100" ry="120" fill="#ff8c00" opacity="0.2"/>
+  <ellipse cx="750" cy="350" rx="100" ry="120" fill="#ff8c00" opacity="0.2"/>
+  <ellipse cx="600" cy="250" rx="140" ry="80" fill="#ffa500" opacity="0.15"/>
+  <ellipse cx="600" cy="550" rx="140" ry="80" fill="#ff6347" opacity="0.15"/>
+
+  <!-- Subtle gas clouds -->
+  <path d="M 350 300 Q 400 250 450 300 T 550 300" stroke="#ff9500" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M 650 300 Q 700 250 750 300 T 850 300" stroke="#ff9500" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- Highlight glow on right side -->
+  <ellipse cx="650" cy="380" rx="60" ry="80" fill="#ffd700" opacity="0.2" filter="url(#glow)"/>
+</svg>
