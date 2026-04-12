@@ -1,24 +1,16 @@
 {{ define "main" }}
-<article class="single-post">
-  <div class="container">
-    <header class="post-header">
-      <h1 class="post-title">{{ .Title }}</h1>
-      {{ if .Params.description }}
-      <p class="post-description">{{ .Params.description }}</p>
-      {{ end }}
-    </header>
+<div class="container single-page">
+  <h1>{{ .Title }}</h1>
 
-    <div class="post-content">
-      {{ .Content }}
-    </div>
+  {{ .Content }}
 
+  <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:2rem;">
     {{ if .Params.github }}
-    <div class="post-footer">
-      <a href="{{ .Params.github }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        View on GitHub →
-      </a>
-    </div>
+    <a href="{{ .Params.github }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+    {{ end }}
+    {{ if .Params.live }}
+    <a href="{{ .Params.live }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo →</a>
     {{ end }}
   </div>
-</article>
+</div>
 {{ end }}

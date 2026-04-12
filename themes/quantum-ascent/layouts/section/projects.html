@@ -1,5 +1,6 @@
 {{ define "main" }}
-<main class="section-page projects-page">
+<div class="container projects-page">
+
   <header class="page-header">
     <h1>{{ .Title }}</h1>
     {{ if .Description }}
@@ -9,17 +10,22 @@
 
   <div class="projects-grid">
     {{ range .Pages }}
-    <article class="project-card glass-card">
+    {{ if not .Params.draft }}
+    <article class="project-card">
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       <p class="project-description">{{ .Description }}</p>
-      {{ if .Params.github }}
-      <a href="{{ .Params.github }}" class="project-link">View on GitHub →</a>
-      {{ end }}
-      {{ if .Params.live }}
-      <a href="{{ .Params.live }}" class="project-link">Live Demo →</a>
-      {{ end }}
+      <div class="project-links">
+        {{ if .Params.github }}
+        <a href="{{ .Params.github }}" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+        {{ end }}
+        {{ if .Params.live }}
+        <a href="{{ .Params.live }}" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+        {{ end }}
+      </div>
     </article>
     {{ end }}
+    {{ end }}
   </div>
-</main>
+
+</div>
 {{ end }}

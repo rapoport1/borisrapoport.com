@@ -1,44 +1,30 @@
 {{ define "main" }}
-<!-- Hero Section with Nebula Background -->
-<section class="hero-nebula">
-  <div class="nebula-container">
-    <img src="{{ "images/ring-nebula.webp" | relURL }}" alt="Ring Nebula" class="nebula-image" />
-    <div class="nebula-overlay"></div>
-  </div>
-
-  <div class="hero-nebula-content">
-    <div class="hero-nebula-text glass-card">
-      <h1 class="hero-name">{{ .Site.Title }}</h1>
-      <p class="hero-tagline">Building reliable systems and exploring the cosmos</p>
-      
-      <div class="hero-cta">
-        <a href="/projects/" class="btn btn-primary">View Projects</a>
-        <a href="https://www.linkedin.com/in/rapoporb1/" class="btn btn-secondary">Connect on LinkedIn</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scroll Indicator -->
-  <div class="scroll-indicator">
-    <span>Scroll to explore</span>
-    <div class="scroll-arrow">↓</div>
-  </div>
-</section>
-
-<!-- Quick Access Cards -->
-<section class="quick-access">
+<section class="hero">
   <div class="container">
-    <div class="quick-nav-grid">
-      <a href="/about/" class="quick-nav-card glass-card">
-        <h3>About</h3>
-        <p>My journey through physics, climbing, and automation</p>
-      </a>
-      <a href="/projects/" class="quick-nav-card glass-card">
-        <h3>Projects</h3>
-        <p>Tools, labs, and things I've built</p>
-      </a>
+    <p class="hero-eyebrow">QA Lead &amp; Scrum Master</p>
+    <h1 class="hero-name">Boris Rapoport</h1>
+    <p class="hero-bio">I build reliable systems and lead quality engineering at WeSuite LLC. Physics and astronomy background — the same rigor applies.</p>
+    <div class="hero-cta">
+      <a href="/projects/" class="btn btn-primary">View Projects</a>
+      <a href="/about/" class="btn btn-secondary">About Me</a>
     </div>
   </div>
 </section>
 
+<div class="highlights">
+  <div class="highlights-grid">
+    <div class="highlight-card">
+      <span class="highlight-label">Current role</span>
+      <span class="highlight-value">Lead Scrum Master, WeSuite LLC</span>
+    </div>
+    <div class="highlight-card">
+      <span class="highlight-label">Focus areas</span>
+      <span class="highlight-value">QA Automation · Process Engineering · Scrum</span>
+    </div>
+    <div class="highlight-card">
+      <span class="highlight-label">Based in</span>
+      <span class="highlight-value">Charlottesville, VA</span>
+    </div>
+  </div>
+</div>
 {{ end }}

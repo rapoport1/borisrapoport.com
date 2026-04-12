@@ -2,7 +2,7 @@ baseURL = "https://borisrapoport.com/"
 languageCode = "en-us"
 title = "Boris Rapoport — Automation & QA Leadership"
 theme = "quantum-ascent"
-publishDir = "public"
+publishDir = "docs"
 outputs.home = ["HTML", "JSON"]
 
 # Content
