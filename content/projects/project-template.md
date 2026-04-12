@@ -3,6 +3,7 @@ title: Project Template
 description: Starting point for building new projects
 date: 2024-03-01
 status: Template
+draft: true
 ---
 
 A foundation for the next wave of tools and apps. This template captures the patterns and practices that work—clean architecture, clear documentation, and a focus on user experience over feature bloat.

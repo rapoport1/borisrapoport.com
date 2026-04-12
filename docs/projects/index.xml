@@ -6,15 +6,8 @@
     <description>Recent content in Projects on Boris Rapoport — Automation &amp; QA Leadership</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://borisrapoport.com/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Project Template</title>
-      <link>https://borisrapoport.com/projects/project-template/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://borisrapoport.com/projects/project-template/</guid>
-      <description>&lt;p&gt;A foundation for the next wave of tools and apps. This template captures the patterns and practices that work—clean architecture, clear documentation, and a focus on user experience over feature bloat.&lt;/p&gt;&#xA;&lt;p&gt;Use this as a jumping-off point for future builds. Keeps things consistent and lets me focus on what makes each project unique instead of boilerplate setup.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>MTG Scorekeeper</title>
       <link>https://borisrapoport.com/projects/mtg-scorekeeper/</link>

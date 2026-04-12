@@ -5,6 +5,9 @@ theme = "quantum-ascent"
 publishDir = "docs"
 outputs.home = ["HTML", "JSON"]
 
+# Security
+disableHugoGeneratorInject = true
+
 # Content
 paginate = 12
 summaryLength = 70
@@ -15,7 +18,7 @@ pluralizeListTitles = false
 [markup.goldmark]
 hardWraps = true
 [markup.goldmark.renderer]
-unsafe = true
+unsafe = false
 
 [params]
 author = "Boris Rapoport"
