@@ -22,7 +22,7 @@
   --radius:    6px;
   --radius-lg: 10px;
 
-  --max-w: 860px;
+  --max-w: 1100px;
   --t:     150ms ease;
 }
 
@@ -103,7 +103,10 @@ a { color: inherit; }
 
 /* ========== Hero ========== */
 .hero {
-  padding: 5rem 0 4rem;
+  min-height: calc(100vh - 58px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
   border-bottom: 1px solid var(--border-sub);
 }
 
@@ -143,11 +146,13 @@ a { color: inherit; }
 /* ========== Highlights strip ========== */
 .highlights {
   border-bottom: 1px solid var(--border-sub);
+  background: var(--bg-surface);
 }
 
 .highlights-grid {
   max-width: var(--max-w);
   margin: 0 auto;
+  padding: 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

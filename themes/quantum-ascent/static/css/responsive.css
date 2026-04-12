@@ -1,63 +1,127 @@
 /* Responsive styles */
 
-@media (max-width: 768px) {
+/* ===== Tablet (max 900px) ===== */
+@media (max-width: 900px) {
   .highlights-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .highlight-card {
+  .highlight-card:nth-child(2) {
     border-right: none;
-    border-bottom: 1px solid var(--border-sub);
   }
 
-  .highlight-card:last-child {
-    border-bottom: none;
+  .highlight-card:nth-child(3) {
+    border-top: 1px solid var(--border-sub);
+    border-right: none;
   }
 
   .meta-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
-
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
-@media (max-width: 480px) {
+/* ===== Mobile (max 600px) ===== */
+@media (max-width: 600px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
   .nav-menu {
     gap: 1.25rem;
   }
 
+  .nav-link {
+    font-size: 0.82rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
   .hero {
-    padding: 3rem 0 2.5rem;
+    min-height: calc(100svh - 58px);
+    padding: 3rem 0;
+    align-items: flex-start;
+    padding-top: 3.5rem;
+  }
+
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
+  .hero-bio {
+    font-size: 1rem;
   }
 
   .hero-cta {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .btn {
-    width: 100%;
     text-align: center;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .highlight-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border-sub);
+    padding: 1.25rem 1rem;
+  }
+
+  .highlight-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .highlight-card:nth-child(3) {
+    border-top: none;
+    border-bottom: none;
   }
 
   .meta-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
-  .form-input,
-  .form-textarea {
-    font-size: 16px; /* prevents iOS zoom */
+  .about-hero,
+  .about-meta,
+  .about-content,
+  .skills-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .projects-page,
+  .contact-page {
+    padding-bottom: 3rem;
   }
 
   .contact-form {
     max-width: 100%;
   }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px; /* prevents iOS zoom on focus */
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
+/* ===== High contrast ===== */
 @media (prefers-contrast: more) {
   :root {
     --text:       #ffffff;
@@ -66,6 +130,7 @@
   }
 }
 
+/* ===== Print ===== */
 @media print {
   body { background: white; color: black; }
   .main-nav, .main-footer { display: none; }
