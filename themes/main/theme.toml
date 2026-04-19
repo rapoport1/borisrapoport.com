@@ -1,0 +1,9 @@
+name = "main"
+license = "MIT"
+licenselink = "https://github.com/brapoport/borisrapoport.com/blob/main/LICENSE"
+description = "Custom Hugo theme for borisrapoport.com."
+min_version = "0.100.0"
+
+[author]
+name = "Boris Rapoport"
+homepage = "https://borisrapoport.com"

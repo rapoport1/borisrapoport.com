@@ -1,27 +1,23 @@
 ---
 title: About
-description: Boris Rapoport — From Physics to Automation Leadership
+description: Boris Rapoport — head of QA, process engineer, and Scrum Master at WeSuite LLC
 draft: false
 ---
 
-## The Climb
+## What I do
 
-Rock climbing has been part of my life since high school, working at The Cliffs at Valhalla before moving to Movement Climbing's Brooklyn location. It taught me something most people overlook: precision, deliberation, and knowing when to trust your anchors. Later, I'd find the same mindset applies to building reliable systems.
+At WeSuite I'm head of QA and the team's process engineer and agile coach. Practically: I'm the last sign-off before any release ships, and I run the manual testing across our stack — SSMS for the database side, IIS, a long-lived WinForms desktop app, and a newer web app. Test automation lives with the developers; I focus on the things automation misses, on prioritizing the bug backlog, and on the ceremonies — planning, standups, retrospectives, handovers — that keep the team moving. I'm the bridge between development and sales, marketing, professional services, and support.
 
-I studied Astronomy and Physics at SUNY New Paltz, where I spent time at the observatory taking long-exposure spectral images of planetary nebulae—breaking down light itself to understand what elements made up distant stars. I also climbed constantly in the Shawangunks near campus, working through problems on rock before returning to work through them in data. That curiosity about how systems work, how patterns emerge from chaos, how to measure what matters—that hasn't left me.
+## A recent project
 
-These days, I explore the night sky from Charlottesville with my Celestron telescope and climb at the local gyms, but the same person who studied starlight in the observatory is still asking: *How does this work? How do we know?*
+This past year we shipped a React rewrite of our legacy WinForms tool — roughly the same arc QuickBooks went through moving from desktop to web. We hit about 80% feature parity at launch. I owned quality across the rebuild: hundreds of bugs identified and tracked through resolution, release notes compiled, and handover sessions run with sales, marketing, professional services, and support before we cut over.
 
-## Building Reliable Systems
+In parallel I led our move from Azure DevOps to Linear. The hard part wasn't the tooling switch — it was treating the migration as an excuse to clean house. We collapsed a five-tier hierarchy (Epic → Feature → User Story → Bug/Task) into Linear's three (Initiatives → Projects → Issues), pruned a backlog that had accumulated years of "someday" items, and rebuilt what remained around what we'd actually deliver in the next two quarters.
 
-At WeSuite LLC, I started in support and was promoted to QA Analyst after six months. Within the QA team, I led the shift toward better testing practices and clearer documentation. My focus has been on building reliable systems—whether that's writing test cases for WinForms applications, debugging SQL queries, or running manual tests that catch the details automation misses.
+## Climbing
 
-I'm now certified as both an Advanced Certified Scrum Master and Certified Scrum Product Owner. I facilitate agile ceremonies, guide process improvements, and work to keep our team moving at a sustainable pace.
+I worked at Movement (formerly The Cliffs) for nearly ten years before this career, and I still climb a few times a week. Climbing trains basically every muscle and pays dividends in everything else — opening jars, carrying groceries, the occasional piece of furniture you underestimated. It's also unusually social for an athletic pursuit; everyone in the gym wants you to send your project, and I've met most of my closest friends at the wall. I prefer indoor bouldering — a mild fear of heights makes rope climbing less appealing — but I've spent plenty of weekends on rock outside New Paltz, where I went to school.
 
-My toolkit includes SQL, IIS troubleshooting, test automation, process engineering, and recently, tools like OpenClaw, Linear, Devin AI, and Home Assistant for automating the systems I build. But the fundamentals stay the same: measure carefully, iterate deliberately, trust the process.
+## Outside work
 
-## Outside of Work
-
-I cook seriously—the same precision and planning as testing goes into a good meal. Hiking in Virginia and the surrounding regions keeps me grounded. And I'm always looking for the next climb, whether it's a rock gym or a mountain trail.
-
-I speak English and Russian, and I'm curious about how systems—whether they're technical, organizational, or astronomical—work. That hasn't changed since the observatory.
+Astronomy from Charlottesville with a Celestron, hiking when there's a group, cooking when there isn't. English and Russian.

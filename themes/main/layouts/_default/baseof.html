@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117">
   <meta name="description" content="{{ .Description | default .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="{{ .Permalink }}">
 
-  <meta property="og:title" content="{{ .Title | default .Site.Title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}">
   <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
 
-  <title>{{ .Title | default .Site.Title }}</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
