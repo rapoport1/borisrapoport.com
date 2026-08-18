@@ -16,11 +16,11 @@ unsafe = false
 
 [params]
 author = "Boris Rapoport"
-description = "Quality leader, home-lab operator, and builder of useful small apps."
+description = "Quality leader and systems builder working across home infrastructure, web apps, and mobile software."
 linkedin = "https://www.linkedin.com/in/rapoporb1/"
 github = "https://github.com/rapoport1"
+currentRole = "Lead Scrum Master and Head of Quality Assurance"
 company = "WeSuite LLC"
-location = "Charlottesville, VA"
 
 [[menu.main]]
 name = "About"
