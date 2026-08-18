@@ -23,6 +23,19 @@
 
 /* ===== Mobile (max 600px) ===== */
 @media (max-width: 600px) {
+  .featured-work {
+    padding: 3.5rem 0;
+  }
+
+  .featured-project,
+  .small-apps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project {
+    padding: 1.5rem;
+  }
+
   .nav-container {
     padding: 0 1rem;
   }

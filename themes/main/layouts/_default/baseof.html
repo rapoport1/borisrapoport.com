@@ -7,6 +7,7 @@
   <meta name="description" content="{{ .Description | default .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; connect-src 'none'; font-src 'self'; form-action 'none'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'none'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests">
   <link rel="canonical" href="{{ .Permalink }}">
 
   <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -20,10 +21,6 @@
   <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
 
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ "css/quantum-ascent.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/responsive.css" | relURL }}">

@@ -1,11 +1,11 @@
 {{ define "main" }}
 <section class="hero">
   <div class="container">
-    <p class="hero-eyebrow">Head of QA &amp; Scrum Master</p>
+    <p class="hero-eyebrow">Quality leader · Systems builder</p>
     <h1 class="hero-name">Boris Rapoport</h1>
-    <p class="hero-bio">I build reliable systems and lead quality engineering at WeSuite LLC. Previously studied planetary-nebula spectra at SUNY New Paltz.</p>
+    <p class="hero-bio">I lead quality engineering at WeSuite and build useful systems of my own—from a self-hosted home lab to small web and mobile apps.</p>
     <div class="hero-cta">
-      <a href="/projects/" class="btn btn-primary">View Projects</a>
+      <a href="#featured-work" class="btn btn-primary">Explore My Work</a>
       <a href="/about/" class="btn btn-secondary">About</a>
     </div>
   </div>
@@ -27,4 +27,46 @@
     </div>
   </div>
 </div>
+
+<section class="featured-work" id="featured-work">
+  <div class="container">
+    <header class="section-heading">
+      <p class="section-eyebrow">Featured work</p>
+      <h2>Built to be useful</h2>
+      <p>My home lab is the foundation. The smaller apps that follow turn specific interests and everyday needs into working software.</p>
+    </header>
+
+    {{ with site.GetPage "/projects/home-lab" }}
+    <article class="featured-project">
+      <div>
+        <p class="project-kicker">Primary project · {{ .Params.status }}</p>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Description }}</p>
+      </div>
+      <ul class="tech-list" aria-label="Home lab technologies">
+        {{ range .Params.tech }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <a class="project-link" href="{{ .RelPermalink }}">Explore the home lab →</a>
+    </article>
+    {{ end }}
+
+    <div class="small-apps-heading">
+      <h3>Small apps</h3>
+      <a href="/projects/" class="project-link">View all projects →</a>
+    </div>
+    <div class="small-apps-grid">
+      {{ range where (where site.RegularPages "Section" "projects") ".File.BaseFileName" "ne" "home-lab" }}
+      <article class="small-app-card">
+        <p class="project-kicker">{{ .Params.status }}</p>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Description }}</p>
+        <div class="project-links">
+          <a class="project-link" href="{{ .RelPermalink }}">Details →</a>
+          {{ with .Params.github }}<a class="project-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub →</a>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}

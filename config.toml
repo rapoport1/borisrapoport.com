@@ -4,6 +4,7 @@ title = "Boris Rapoport"
 theme = "main"
 publishDir = "docs"
 disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term"]
 
 [pagination]
 pagerSize = 12
@@ -15,9 +16,9 @@ unsafe = false
 
 [params]
 author = "Boris Rapoport"
-description = "Lead Scrum Master at WeSuite LLC. Physics and astronomy background."
+description = "Quality leader, home-lab operator, and builder of useful small apps."
 linkedin = "https://www.linkedin.com/in/rapoporb1/"
-github = "https://github.com/brapoport"
+github = "https://github.com/rapoport1"
 company = "WeSuite LLC"
 location = "Charlottesville, VA"
 
