@@ -8,14 +8,21 @@
     {{ end }}
   </header>
 
-  <div class="projects-grid">
+  <div class="projects-grid projects-grid-visual">
     {{ range .Pages.ByWeight }}
     {{ if not .Params.draft }}
     <article class="project-card">
-      <p class="project-kicker">{{ .Params.status }}</p>
+      <div class="project-card-topline">
+        <p class="project-kicker">{{ if eq .Weight 1 }}Featured · {{ end }}{{ .Params.status }}</p>
+        <span class="project-number">0{{ .Weight }}</span>
+      </div>
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       <p class="project-description">{{ .Description }}</p>
+      <ul class="tech-list" aria-label="Technologies used">
+        {{ range .Params.tech }}<li>{{ . }}</li>{{ end }}
+      </ul>
       <div class="project-links">
+        <a href="{{ .RelPermalink }}" class="project-link">Read case study →</a>
         {{ if .Params.github }}
         <a href="{{ .Params.github }}" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
         {{ end }}

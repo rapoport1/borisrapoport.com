@@ -1,8 +1,57 @@
 {{ define "main" }}
 <div class="container single-page">
-  <h1>{{ .Title }}</h1>
+  <header class="project-detail-header">
+    <p class="project-kicker">{{ .Params.status }} · Project</p>
+    <h1>{{ .Title }}</h1>
+    <p class="project-detail-summary">{{ .Description }}</p>
+    <dl class="project-meta">
+      <div><dt>Role</dt><dd>{{ .Params.role }}</dd></div>
+      <div><dt>Status</dt><dd>{{ .Params.status }}</dd></div>
+      <div><dt>Updated</dt><dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2006" }}</time></dd></div>
+    </dl>
+    <ul class="tech-list" aria-label="Technologies used">
+      {{ range .Params.tech }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  </header>
 
-  {{ .Content }}
+  {{ with .Params.highlights }}
+  <section class="project-signal-grid" aria-label="Project overview">
+    {{ range . }}
+    <div class="project-signal">
+      <span>{{ .label }}</span>
+      <strong>{{ .value }}</strong>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ if .Params.featured }}
+  <figure class="system-map">
+    <figcaption>How I divide the jobs</figcaption>
+    <div class="system-map-roles">
+      <div><span>Talk</span><strong>Voice satellite<br>Private text interface</strong></div>
+      <div><span>Interpret</span><strong>Hermes<br>Ollama</strong></div>
+      <div><span>Act</span><strong>Home Assistant<br>Reversible automations</strong></div>
+    </div>
+    <div class="system-map-foundation"><span>Run</span><strong>Proxmox + Linux</strong></div>
+  </figure>
+  {{ end }}
+
+  {{ if .Params.featured }}
+  <div class="project-story-layout">
+    <aside class="project-toc" aria-label="Case study sections">
+      <p>Case study</p>
+      {{ .TableOfContents }}
+    </aside>
+    <article class="project-detail-body">
+      {{ .Content }}
+    </article>
+  </div>
+  {{ else }}
+    <article class="project-detail-body">
+      {{ .Content }}
+    </article>
+  {{ end }}
 
   <div class="single-actions">
     {{ if .Params.github }}
