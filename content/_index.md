@@ -1,5 +1,5 @@
 ---
 title: Boris Rapoport
-description: Lead Scrum Master at WeSuite LLC. Physics and astronomy background.
+description: Quality leader, home-lab operator, and builder of useful small apps.
 draft: false
 ---

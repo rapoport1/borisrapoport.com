@@ -1,6 +1,6 @@
 name = "main"
 license = "MIT"
-licenselink = "https://github.com/brapoport/borisrapoport.com/blob/main/LICENSE"
+licenselink = "https://github.com/rapoport1/borisrapoport.com/blob/main/LICENSE"
 description = "Custom Hugo theme for borisrapoport.com."
 min_version = "0.100.0"
 

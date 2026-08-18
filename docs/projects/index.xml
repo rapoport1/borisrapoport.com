@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on Boris Rapoport</title>
-    <link>https://borisrapoport.com/projects/</link>
-    <description>Recent content in Projects on Boris Rapoport</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://borisrapoport.com/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MTG Scorekeeper</title>
-      <link>https://borisrapoport.com/projects/mtg-scorekeeper/</link>
-      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://borisrapoport.com/projects/mtg-scorekeeper/</guid>
-      <description>&lt;p&gt;A life-and-counter tracker for Magic: The Gathering — life totals, poison, commander damage, and whatever else I decide to add next. I built it to learn the front-end stack hands-on and to have a tracker I can extend on my own timeline instead of relying on someone else&amp;rsquo;s published app.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Home Lab</title>
-      <link>https://borisrapoport.com/projects/home-lab/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://borisrapoport.com/projects/home-lab/</guid>
-      <description>&lt;p&gt;A home server running Home Assistant for automation, Pi-hole for network-wide ad blocking, and an OpenClaw instance I use as a local-LLM personal assistant — today it talks to Home Assistant; more ambitious uses are in progress. Private infrastructure where I&amp;rsquo;m the admin, the user, and the on-call engineer.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Boris Rapoport</title><link>https://borisrapoport.com/projects/</link><description>Recent content in Projects on Boris Rapoport</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://borisrapoport.com/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Home Lab</title><link>https://borisrapoport.com/projects/home-lab/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://borisrapoport.com/projects/home-lab/</guid><description>&lt;p&gt;A home server running Home Assistant for automation, Pi-hole for network-wide ad blocking, and an OpenClaw instance I use as a local-LLM personal assistant—today it talks to Home Assistant, with more ambitious uses in progress.&lt;/p&gt;
+&lt;p&gt;This is the center of my personal technology work: private infrastructure where I&amp;rsquo;m the admin, the user, and the on-call engineer. It gives me a practical place to learn networking, integrations, automation, observability, and the day-to-day discipline of keeping useful services reliable.&lt;/p&gt;</description></item><item><title>MTG Scorekeeper</title><link>https://borisrapoport.com/projects/mtg-scorekeeper/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://borisrapoport.com/projects/mtg-scorekeeper/</guid><description>&lt;p&gt;A responsive life-and-counter tracker for Magic: The Gathering, including life totals, poison, commander damage, and Scryfall-powered Commander search. I built it to learn the front-end stack hands-on and to have a tracker I can extend on my own timeline.&lt;/p&gt;</description></item><item><title>MTG Scorekeeper Mobile</title><link>https://borisrapoport.com/projects/mtg-scorekeeper-mobile/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://borisrapoport.com/projects/mtg-scorekeeper-mobile/</guid><description>&lt;p&gt;The mobile evolution of my Magic: The Gathering scorekeeper, built with React Native and Expo. It brings the game setup, player panels, commander search, themes, settings, and reusable game engine into an app designed specifically for phones and tablets.&lt;/p&gt;
+&lt;p&gt;This project is currently in development as I turn the ideas tested in the web app into a focused native experience.&lt;/p&gt;</description></item></channel></rss>

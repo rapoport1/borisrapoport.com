@@ -1,5 +1,22 @@
 /* borisrapoport.com — main stylesheet */
 
+/* Self-hosted under the SIL Open Font License; see /fonts/LICENSE-*.txt. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("../fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: url("../fonts/space-grotesk-latin.woff2") format("woff2");
+}
+
 /* ========== Variables ========== */
 :root {
   --bg:          #0d1117;
@@ -242,6 +259,108 @@ a { color: inherit; }
 }
 
 /* ========== Projects ========== */
+.featured-work {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.section-eyebrow,
+.project-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  margin: 0.35rem 0 0.65rem;
+}
+
+.section-heading > p:last-child,
+.featured-project p,
+.small-app-card > p:last-of-type {
+  color: var(--text-muted);
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem 2rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--bg-surface), var(--bg));
+}
+
+.featured-project h3,
+.small-app-card h3,
+.small-apps-heading h3 {
+  font-family: var(--font-heading);
+}
+
+.featured-project h3 {
+  margin: 0.35rem 0 0.65rem;
+  font-size: 1.5rem;
+}
+
+.featured-project h3 a,
+.small-app-card h3 a {
+  text-decoration: none;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: start;
+  list-style: none;
+}
+
+.tech-list li {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.featured-project > .project-link {
+  grid-column: 1 / -1;
+}
+
+.small-apps-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+}
+
+.small-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.small-app-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border-sub);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
+
+.small-app-card h3 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
 .projects-page {
   padding-bottom: 5rem;
 }

@@ -9,9 +9,10 @@
   </header>
 
   <div class="projects-grid">
-    {{ range .Pages }}
+    {{ range .Pages.ByWeight }}
     {{ if not .Params.draft }}
     <article class="project-card">
+      <p class="project-kicker">{{ .Params.status }}</p>
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       <p class="project-description">{{ .Description }}</p>
       <div class="project-links">

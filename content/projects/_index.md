@@ -1,4 +1,4 @@
 ---
 title: Projects
-description: Side projects and home-lab experiments.
+description: My home lab, practical experiments, and small apps built to solve real problems.
 ---
