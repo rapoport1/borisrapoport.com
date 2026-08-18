@@ -1197,6 +1197,55 @@ p, li, dd { overflow-wrap: break-word; }
   text-decoration: underline;
 }
 
+/* ========== Not found ========== */
+.error-page {
+  min-height: calc(100vh - 195px);
+  display: grid;
+  place-items: center;
+  padding: clamp(4rem, 10vw, 8rem) 0;
+  background:
+    radial-gradient(circle at 70% 35%, rgba(88, 166, 255, 0.1), transparent 28rem),
+    linear-gradient(rgba(88, 166, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(88, 166, 255, 0.025) 1px, transparent 1px);
+  background-size: auto, 42px 42px, 42px 42px;
+}
+
+.error-page-inner {
+  width: 100%;
+  max-width: 720px;
+}
+
+.error-code {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.error-page h1 {
+  max-width: 640px;
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 7vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.error-page-inner > p:not(.error-code) {
+  max-width: 520px;
+  margin-top: 1.25rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
 .single-actions {
   display: flex;
   gap: 0.75rem;
